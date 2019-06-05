@@ -3,7 +3,7 @@
         <app-header></app-header>
         <hr>
         <div class="row">
-            <servers></servers>
+            <app-servers></app-servers>
             <app-server-details></app-server-details>
         </div>
         <hr>
@@ -20,7 +20,7 @@
     export default {
         components: {
             appHeader: Header,
-            Servers,
+            'app-servers': Servers,
             'app-server-details': ServerDetails,
             'app-footer': Footer
         }

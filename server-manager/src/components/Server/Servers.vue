@@ -1,7 +1,7 @@
 <template>
     <div class="col-xs-12 col-sm-6">
         <ul class="list-group">
-            <app-server class="list-group-item" v-for="server in servers" :server="server"></app-server>
+            <app-server class="list-group-item" v-for="(server, index) in servers" :key="index" :server="server"></app-server>
         </ul>
     </div>
 </template>
